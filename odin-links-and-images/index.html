@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Webpage</title>
+    </head>
+
+    <body>
+        <h1>Homepage</h1>
+
+        <!--
+            Anchor Elements
+            Wrapping the text or another HTML element we want to be a link with <a> tag
+        -->
+
+        <!--
+            hyperlink reference (<href>) attribute is the destination we want our link to go to
+            Absolute links: links to page on other websites on the internet
+        -->
+        <a  href="https://www.theodinproject.com/about">click me</a>
+
+        <!--
+            Relative links: links to other page within our own website
+            Prepending ./ before the link will prevent unexpected issues
+            By adding ./ we are specifying to our code that it should start looking for the file/dir relative to the current dir
+        -->
+        <a href="./pages/about.html">About</a>
+
+        <!--
+            Display an image in HTML using <img> element
+            <img> element is self-closing, and does not need a closing tag
+            Instead of wrapping content with opening and closing tag, it embeds an image into the page using src attribute
+            The src attribute works like the href attribute for anchor tags
+            It can embed an image using both absolute and relative paths
+        -->
+
+        <!--
+            Every image element should also have an alt (alternative text) attribute
+            It's used to describe an image and provide description if image can't be loaded
+            It's also used with screen readers to describe what the image is to visually impared users
+        -->
+        <img src="./images/dog.jpg" alt="Good boy Charles">
+    </body>
+</html>
